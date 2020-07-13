@@ -102,3 +102,11 @@ note: @Primary has the top priority even your autowirted vaiable is followed the
 ## Debug
 resoruces/application.properties
 
+
+## Component Scan
+The folder which spring use to find the component
+by default, it is top folder is the same as @SpringBootApplication
+
+### How to config
+Add the @ComponentScan("com.in28minutes.spring.basics.componentscan")
+@ComponentScan({"com.my.package.first","com.my.package.second"})
