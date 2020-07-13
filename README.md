@@ -73,8 +73,11 @@ B: prototype
 A and B are all same
 
 if we want to A has different B, We need proxy
-B should chagne its annoatation @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE,
+B should chagne its annoatation  @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE,
 proxyMode = ScopedProxyMode.TARGET_CLASS)
+
+> note: the Autowired instance becomes Proxy, instead of B, and each time the Proxy get the instance of B it make sure the result is new instance
+
 
 #### How to config
 @Scope("prototype"") at each class/component
