@@ -110,3 +110,8 @@ by default, it is top folder is the same as @SpringBootApplication
 ### How to config
 Add the @ComponentScan("com.in28minutes.spring.basics.componentscan")
 @ComponentScan({"com.my.package.first","com.my.package.second"})
+
+## CDI
+define the interface
+Context Dependency Interface
+Spring Supports most annotations
