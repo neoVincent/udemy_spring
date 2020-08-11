@@ -52,6 +52,13 @@ component scan
 scan all the things under this @SpringBootApplication package
 in our example, scan all the package and its sub-package  com.in28minutes.spring.basics.springin5steps;
 
+### Component Annotation
+All the following annotation behave same basically. Falls into 4 categories according to different layer(Web, Business, Data ) 
+@Component: generic component
+@Service: Business Service Facade
+@Repository: encapsulating storage, retrieval, and search behavior typically from a relational database
+@Controller: Controller in MVC pattern
+
 ### Scope
 default: singleton
 - singleton: one instance per Spring Context
@@ -96,7 +103,6 @@ note: @Primary has the top priority even your autowirted vaiable is followed the
 
 - @Qualifier(name)
     - both at the class below @Component and below the @AutoWired 
-
 
 
 ## Debug
