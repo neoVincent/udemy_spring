@@ -115,3 +115,6 @@ Add the @ComponentScan("com.in28minutes.spring.basics.componentscan")
 define the interface
 Context Dependency Interface
 Spring Supports most annotations
+
+## How to ready config file
+use the @PropertySource

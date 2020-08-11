@@ -16,6 +16,8 @@ public class BinarySearchImpl {
     // BinarySearchImpl dependent on sortAlgorithm
     @Autowired
     @Qualifier("quick")
+
+
     private SortAlgorithm sortAlgorithm;
 
     public BinarySearchImpl(SortAlgorithm sortAlgorithm) {
